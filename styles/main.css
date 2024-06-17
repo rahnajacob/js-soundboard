@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(19, 17, 17, 0.226);
+}
+h1 {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(228, 3, 3);
+}
+.grid-container {
+    position: absolute;
+    display: grid;
+    /* -ms-grid-row-align: center;
+    -ms-grid-column-align: center; */
+    column-gap: 12px;
+    row-gap: 12px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-template-columns: 200px 200px 200px 200px;
+    margin: 0 auto;
+    place-self: center;
+}
+
+.grid-button {
+    font-family: Verdana, sans-serif;
+    background-color: rgb(7, 59, 104);
+    border: 2px solid rgb(21, 141, 41);
+    color:rgb(255, 250, 250);
+    font-weight:400;
+    text-align: center;
+    padding: 50px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 0 9px #868585;
+    transition: color 0.5s;
+}
+.grid-button:hover {
+    color: rgb(251, 255, 0);
+    cursor: pointer;   
+    position: relative;
+    font-size: 22px;
+    background-image: url(../images/head.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url("./images/head.gif"); */
+    /* background-image: url("https://gifdb.com/gif/daft-punk-dancing-duo-animation-ny9nijet9sbrpz62.html"); */
+}
+.grid-button:active {
+    background-color: rgb(2, 17, 34);
+    box-shadow: 0 5px #444343
+}
+/* .grid-button:hover img{ display: block; } */
+/* .grid-button:hover:after{
+    content: url("/home/rjacob/GA/labs/js-soundboard-start/js-soundboard-start/images/head.gif"); 
+    display: block;
+    position: absolute;
+} */
+
+/* .overlay{
+    max-width: 120px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.1s;
+}
+.overlay:hover{
+    opacity: 0.5;
+} */
